@@ -2,13 +2,55 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
+/* .........Header section .............. */
+nav {
+    background-color: #562EFF;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.logo {
+    width: 110px;
+    height: 51px;
+    position: relative;
+    right: 452px;
+}
+
+.profile {
+    width: 51px;
+    height: 51px;
+    margin-right: 290px;
+
+}
+
+nav li {
+    list-style: none;
+    margin: 0 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+nav li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 0 10px;
+}
+
 /* common style or utilities */
 body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     background-color: #E5E5E5;
-    ;
+    margin: 0 auto;
 }
 
 main {
@@ -73,12 +115,15 @@ hr {
 
 .blog {
     display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
 .blog .thumbnail img {
     width: 177px;
     height: 127px;
+
 }
 
 .blog-info {
@@ -108,6 +153,12 @@ hr {
     height: 141px;
 }
 
+.course-aurthor a {
+    text-decoration: none;
+    color: #ED6B4F;
+
+}
+
 .course-info {
     display: flex;
     align-items: center;
@@ -126,11 +177,28 @@ hr {
     color: #AEAEAE;
 }
 
+.course-duration {
+    color: #FF4A60;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: #FEE5DF;
+}
+
+span {
+    font-size: 14px;
+    color: #A2A2A2;
+}
+
+
 /* ..............Media Quaries................ */
 
 /* ........Mobile device.... */
 
 @media only screen and (max-width:688px) {
+    nav {
+        display: none;
+    }
+
     .container {
         width: 100%;
     }
@@ -139,6 +207,7 @@ hr {
     .blog {
         flex-direction: column;
     }
+
 
     .players,
     .blogs,
